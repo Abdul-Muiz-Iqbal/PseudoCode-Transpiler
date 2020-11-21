@@ -1,0 +1,16 @@
+iAge = 0 : sRemarks = "" : iCounter = 0
+FOR iCounter = 1 TO 5
+    PRINT "Enter Age:"
+    READ iAge
+    IF iAge < 13 THEN
+        sRemarks = "Child"
+    ELSE IF iAge >= 13 AND iAge <= 19 THEN
+        sRemarks = "Teen"
+    ELSE IF iAge > 19 THEN
+        sRemarks = "Adult"
+    ELSE
+        sRemarks = "Unreachable"
+    ENDIF
+    PRINT "You are a/an: ", sRemarks
+NEXT iCounter
+PRINT "These Amount Of People Were Asked: ", iCounter
