@@ -4,9 +4,9 @@ FOR iCounter = 1 TO 5
     READ iAge
     IF iAge < 13 THEN
         sRemarks = "Child"
-    ELSE IF iAge >= 13 AND iAge <= 19 THEN
+    ELSEIF iAge >= 13 AND iAge <= 19 THEN
         sRemarks = "Teen"
-    ELSE IF iAge > 19 THEN
+    ELSEIF iAge > 19 THEN
         sRemarks = "Adult"
     ELSE
         sRemarks = "Unreachable"
